@@ -14,8 +14,332 @@
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+body{
+  overflow-x: hidden;
+  margin:0px;
+  padding:0px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+a.navbar-brand img {
+  max-width: 100px;
+}
+
+.headerfix{
+  position:fixed;
+  top:0;
+  z-index:1000; 
+  width:100%;
+  overflow:hidden;
+}
+.header {
+  background: #36012b;
+ 
+  background: linear-gradient(90deg, #bf4343 0%, #1ebfb0 35%, #67b1a3 100%);
+}
+@media only screen and (max-width: 767px) {
+  .logo{
+    width: 70px;
+  }
+}
+.nav-link {
+  color: #fff;
+  margin: 0 5px;
+  padding: 6px 20px !important;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  display: inline-block;
+  transition: 0.5s;
+  font-size: 20px;
+  font-weight: 700;
+}
+.nav-link:hover {
+  border: 1px solid #fff;
+  color: #fff;
+}
+.nav-link:focus {
+  color: #fff;
+}
+.active-link {
+  border-radius: 50px;
+  color: #fff !important;
+}
+.btn-style {
+  background: linear-gradient(45deg, #b50957, #74084e);
+  color: #ffffff;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 5px;
+  font-size: 20px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.btn-style:hover {
+  color: #fff;
+  background: linear-gradient(180deg, #6f3597, #1962c0);
+}
+.navbar-toggler{
+  background-color: #fff;
+}
+
+/* Banner  */
+.banner {
+  position: relative;
+  margin-top: 80px;
+}
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #ff146a;
+}
+p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.about-us {
+  padding: 60px 0;
+  background: url(../assets/image/banner-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.heading h2 {
+  /* color: #4a00ac; */
+  color: #f51d26;
+  font-weight: 800;
+}
+.heading {
+  padding: 5px 8%;
+  border-radius: 50px;
+  background: linear-gradient(
+    89.96deg,
+    #fcfcfc 1.08%,
+    #d9e9ff 49.5%,
+    #ffffff 99.97%
+  );
+  display: table;
+  margin: 0px auto 15px;
+}
+
+/* how to play */
+.how-to-play {
+  padding: 100px 0;
+}
+.play-step {
+  position: relative;
+  padding: 30px;
+  border-radius: 8px;
+  background: url(../assets/image/ball.png); 
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  background-size: cover;
+  margin: auto;
+  height: 100%;
+  border-radius: 50%;
+  background-position: center;
+  height: 300px;
+  align-items: center;
+  width: 300px;
+  justify-content: center;
+  display: flex;
+  transition: ease-in-out 0.5s;
+}
+
+.play-step:hover {
+  transform: translateY(-10px);
+}
+.play-step p {
+  font-size: 23px;
+  color: white;
+}
+.play-step-sn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ff146a;
+  top: 35px;
+  right: 15px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #eeeeee;
+}
+
+/* start game */
+.start-game {
+  position: relative;
+  padding: 60px 0;
+  
+  background-size: cover;
+  background-position: bottom;
+}
+.game-step-wrapper {
+  display: flex;
+}
+.game-step {
+  font-size: 70px;
+  margin-right: 15px;
+  line-height: 67px;
+  font-weight: 700;
+  color: #ff146a;
+}
+.game-step-text {
+  font-size: 25px;
+  font-weight: 600;
+  color: #000;
+}
+
+/* features */
+.features {
+  position: relative;
+  padding: 60px 0;
+}
+.single-feature {
+  padding: 25px;
+  border-radius: 7px;
+  /* background: linear-gradient(to top right, #5738a5, #0351a0); */
+  background: url(../assets/image/champions.png);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  height: 100%;
+}
+.single-feature h3 {
+  font-size: 26px;
+}
+.feature-icon {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 4px solid #e7e7e7;
+  margin: 0 auto 15px;
+  padding: 20px;
+  animation: zooming 2s linear infinite alternate-reverse;
+}
+@keyframes zooming {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* counter */
+.counter {
+  margin: 20px 0;
+  padding: 30px 0;
+  background-attachment: fixed;
+  background-size: cover;
+  /* background: linear-gradient(90deg, rgb(0 0 0) 0%, rgb(143 10 10) 35%, rgb(32 0 0) 100%); */
+  background: linear-gradient(90deg, #bf4343 0%, #1ebfb0 35%, #67b1a3 100%);
+}
+
+.item {
+  /* background: #ff146a; */
+  backdrop-filter: blur(8px);
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 4% 5%;
+  font-size: 50px;
+  font-weight: 700;
+  margin: 10px;
+  text-align: center;
+}
+.item p{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* join us */
+.join-us{
+    padding: 60px 0;
+}
+.join-image img{
+    animation: zooming ease 4s infinite alternate-reverse;
+}
+
+/* footer  */
+.footer {
+  padding: 50px 0;
+  background: url(../assets/image/footer-bg.png);
+  background-position: center;
+  background-size: cover;
+}
+.foot-links li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 10px;
+}
+.foot-links li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500px;
+}
+.foot-contact-detail a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+.top-border{
+  border-top: 1px solid #3d1099;
+}
+.copyright {
+  padding: 15px 0;
+  background: linear-gradient(90deg, #bf4343 0%, #1ebfb0 35%, #67b1a3 100%);
+}
+.copyright p {
+  margin: 0;
+  color: #fff;
+  font-size: 14px;
+}
+.copyright p a{
+    color: #fff;
+    text-decoration: none;
+}
+.foot-social-icons a{
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 10px 2px;
+}
+.foot-logo img {
+  max-width: 150px;
+}
+
+li.nav-item.download_btn a.nav-link { background:transparent;
+    border: 1px solid;
+    text-align:center;
+    color: #fff;  -webkit-animation-name: blinker;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(.5, 0, 1, 1);
+  -webkit-animation-duration: 1.7s;
+}
+
+@-webkit-keyframes blinker {
+  0% {background:transparent; border: 1px solid;}
+  50% {background:#fe48c0; color: #fff;border: 1px solid;}
+  100% {background:#d29314; color: #fff;border: 1px solid;}
 }

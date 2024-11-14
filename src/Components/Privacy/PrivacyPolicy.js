@@ -15,7 +15,7 @@ const PrivacyPolicy = () => {
             <div className="col-lg-12">
               <h3 className="text-dark">Introduction</h3>
               <p className="text-dark">
-                Welcome to AMG Infotech Solution LLP. This Privacy Policy outlines how we collect, use, disclose, and safeguard your personal information when you access or use our website.
+                Welcome to Brightbuck Private Limited  This Privacy Policy outlines how we collect, use, disclose, and safeguard your personal information when you access or use our website.
               </p>
               <h3 className="mt-4 text-dark">Information We Collect</h3>
               <p>

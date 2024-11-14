@@ -16,7 +16,7 @@ function TermsC() {
           <div className="col-lg-12">
             <h3 className="text-dark">Refund Policy</h3>
             <p className="text-dark">
-              We at AMG Infotech Solution LLP strive to ensure your satisfaction with our services. However, we understand that there may be instances where you need to request a refund. Please review our refund policy below:
+              We at Brightbuck Private Limited strive to ensure your satisfaction with our services. However, we understand that there may be instances where you need to request a refund. Please review our refund policy below:
             </p>
             <h4 className="mt-4 text-dark">Refund Eligibility:</h4>
             <p>Refunds are only applicable for purchases made directly through our website.</p>

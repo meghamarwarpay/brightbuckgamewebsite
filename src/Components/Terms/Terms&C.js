@@ -63,7 +63,7 @@ function TermsAndConditions() {
 
               <h4 className="mt-4 text-dark">8. Intellectual Property</h4>
               <p>
-                All graphics, game content, branding, and code are the property of Mindmatrixcare Private Limited. You may not reuse or reproduce them without written consent.
+                All graphics, game content, branding, and code are the property of Brightbuck Private Limited. You may not reuse or reproduce them without written consent.
               </p>
 
               <h4 className="mt-4 text-dark">9. Changes to the Terms</h4>
